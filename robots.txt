@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://diahub.dk/sitemap.xml

@@ -1,0 +1,451 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DiaHub | Real-Time Glucose Visibility in a Keychain Display</title>
+    <meta
+      name="description"
+      content="DiaHub is a compact keychain display for real-time glucose visibility from compatible data sources. Built for people with diabetes, parents, and caregivers."
+    />
+    <meta name="theme-color" content="#07111f" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://diahub.dk/" />
+    <meta property="og:title" content="DiaHub | Real-Time Glucose Visibility in a Keychain Display" />
+    <meta
+      property="og:description"
+      content="DiaHub is a compact keychain display for real-time glucose visibility from compatible data sources. Built for people with diabetes, parents, and caregivers."
+    />
+    <meta property="og:image" content="https://diahub.dk/assets/og-image-1200x630.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="DiaHub" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="da_DK" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DiaHub | Real-Time Glucose Visibility in a Keychain Display" />
+    <meta
+      name="twitter:description"
+      content="DiaHub is a compact keychain display for real-time glucose visibility from compatible data sources. Built for people with diabetes, parents, and caregivers."
+    />
+    <meta name="twitter:image" content="https://diahub.dk/assets/og-image-1200x630.png" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://diahub.dk/" />
+    <link rel="alternate" hreflang="en" href="https://diahub.dk/?lang=en" />
+    <link rel="alternate" hreflang="da" href="https://diahub.dk/?lang=da" />
+    <link rel="alternate" hreflang="x-default" href="https://diahub.dk/" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="image" href="/assets/gmeter.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "DiaHub",
+        "url": "https://diahub.dk/",
+        "logo": "https://diahub.dk/assets/logo.png",
+        "description": "DiaHub is a compact keychain display for real-time glucose visibility from compatible data sources.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "hello@diahub.dk",
+          "availableLanguage": ["en", "da"]
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "DiaHub",
+        "brand": {
+          "@type": "Brand",
+          "name": "DiaHub"
+        },
+        "description": "A compact keychain-sized display that shows glucose from compatible data sources in real time.",
+        "image": [
+          "https://diahub.dk/assets/gmeter.png",
+          "https://diahub.dk/assets/gm1.png",
+          "https://diahub.dk/assets/og-image-1200x630.png"
+        ],
+        "category": "Health Accessory",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "People with diabetes, parents, and caregivers"
+        },
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/PreOrder",
+          "priceCurrency": "DKK",
+          "url": "https://diahub.dk/"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is DiaHub?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A compact connected keychain display designed to show glucose information at a glance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who is it for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "People living with diabetes, parents, caregivers, and anyone who benefits from easier visibility."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it replace medical guidance or diagnosis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. DiaHub is a non-medical accessory for visibility and does not replace medical advice or diagnosis."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does DiaHub connect?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Through a simple Wi-Fi setup to compatible glucose data sources."
+            }
+          }
+        ]
+      }
+    </script>
+    <script src="script.js" defer></script>
+  </head>
+  
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="DiaHub home">
+          <img src="assets/logo.png" alt="DiaHub logo" width="42" height="42" decoding="async" />
+          <span>DiaHub</span>
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="main-nav" id="primary-navigation" aria-label="Primary">
+          <a href="#product" data-i18n="nav_product">Product</a>
+          <a href="#why-now" data-i18n="nav_why_now">Why now</a>
+          <a href="#investor" data-i18n="nav_investors">Impact</a>
+          <a href="#story" data-i18n="nav_story">Story</a>
+          <a href="#faq" data-i18n="nav_faq">FAQ</a>
+          <a class="button mobile-contact-link" href="#contact" data-i18n="header_contact">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <div class="lang-switch" aria-label="Language switch">
+            <button class="lang-btn is-active" type="button" data-lang="en">EN</button>
+            <button class="lang-btn" type="button" data-lang="da">DA</button>
+          </div>
+          <a class="button button-ghost header-deck-link" href="pdf/diahub.pdf" download="diahub-investor-pitch.pdf" data-i18n="header_deck">Investor Pitch (PDF)</a>
+          <a class="button desktop-contact-link" href="#contact" data-i18n="header_contact">Contact</a>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero section">
+          <div class="hero-copy reveal">
+            <div class="eyebrow" data-i18n="hero_eyebrow">Coming soon</div>
+            <h1>
+              <span data-i18n="hero_title_line_1">The future of diabetes management</span>
+              <span data-i18n="hero_title_line_2">is here</span>
+            </h1>
+            <p class="hero-lead" data-i18n="hero_lead">
+              DiaHub is a compact keychain-sized hub that shows glucose from compatible data sources in real time.
+              No phone needed. No app required. Just glance and know.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="#contact" data-i18n="hero_cta_primary">Join waitlist</a>
+              <a class="button button-ghost" href="#investor" data-i18n="hero_cta_secondary">See how it works</a>
+            </div>
+            <ul class="signal-row" aria-label="Product highlights">
+              <li data-i18n="hero_point_1">Dedicated glucose display</li>
+              <li data-i18n="hero_point_2">Wi-Fi onboarding</li>
+              <li data-i18n="hero_point_3">Weeks of battery life</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="device-stage">
+              <div class="device-card device-card-back">
+                <img src="assets/gmeter.png" alt="DiaHub device front view" width="800" height="800" fetchpriority="high" decoding="async" />
+              </div>
+              <div class="device-card device-card-front">
+                <img src="assets/gm1.png" alt="DiaHub device rear view" width="800" height="800" loading="lazy" decoding="async" />
+              </div>
+              <div class="floating-panel metric-panel">
+                <span class="panel-label" data-i18n="metric_label">Signal</span>
+                <strong data-i18n="metric_title">Always glanceable</strong>
+                <small data-i18n="metric_text">Built for everyday carry</small>
+              </div>
+              <div class="floating-panel status-panel">
+                <span class="dot"></span>
+                <strong data-i18n="status_title">Live data</strong>
+                <small data-i18n="status_text">No app maze</small>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="trust-band">
+          <p data-i18n="trust_band">Built in Denmark for people with diabetes, parents, and caregivers who need simple and reliable glucose visibility.</p>
+        </section>
+
+        <section class="section split" id="product">
+          <div class="section-intro reveal">
+            <div class="eyebrow" data-i18n="product_eyebrow">The product</div>
+            <h2 data-i18n="product_title">Most glucose checks still depend on general-purpose devices. DiaHub makes glucose the focus.</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card reveal">
+              <h3 data-i18n="product_card_1_title">For everyday life</h3>
+              <p data-i18n="product_card_1_text">Quick, distraction-free awareness without reaching for a second screen.</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3 data-i18n="product_card_2_title">For parents and caregivers</h3>
+              <p data-i18n="product_card_2_text">A direct, always-available object that reduces the stress of checking through layers of apps.</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3 data-i18n="product_card_3_title">For practical use</h3>
+              <p data-i18n="product_card_3_text">Compact hardware that is easy to carry, easy to use, and ready in seconds.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section dark-section" id="why-now">
+          <div class="section-intro reveal">
+            <div class="eyebrow" data-i18n="why_eyebrow">Why now</div>
+            <h2 data-i18n="why_title">Current solutions are often too dependent on phones, apps, and complex flows.</h2>
+          </div>
+          <div class="argument-grid">
+            <article class="argument reveal">
+              <span>01</span>
+              <h3 data-i18n="why_card_1_title">Phones are not always available</h3>
+              <p data-i18n="why_card_1_text">Charging, school, meetings, sleep, and daily movement can all delay access to glucose data.</p>
+            </article>
+            <article class="argument reveal">
+              <span>02</span>
+              <h3 data-i18n="why_card_2_title">Smartwatches are not for everyone</h3>
+              <p data-i18n="why_card_2_text">They can be expensive, short on battery, and not ideal for every age or routine.</p>
+            </article>
+            <article class="argument reveal">
+              <span>03</span>
+              <h3 data-i18n="why_card_3_title">A dedicated device can be simpler</h3>
+              <p data-i18n="why_card_3_text">One purpose, one screen, one quick check when time and clarity matter most.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section investor-layout" id="investor">
+          <div class="section-intro reveal">
+            <div class="eyebrow" data-i18n="investor_eyebrow">Who it helps</div>
+            <h2 data-i18n="investor_title">DiaHub is designed for real daily use across different diabetes routines.</h2>
+          </div>
+
+          <div class="thesis-grid">
+            <article class="thesis-card reveal">
+              <h3 data-i18n="investor_card_1_title">People with diabetes</h3>
+              <p data-i18n="investor_card_1_text">Get immediate glucose visibility without opening multiple apps.</p>
+            </article>
+            <article class="thesis-card reveal">
+              <h3 data-i18n="investor_card_2_title">Parents and families</h3>
+              <p data-i18n="investor_card_2_text">Reduce stress with a straightforward way to check levels quickly.</p>
+            </article>
+            <article class="thesis-card reveal">
+              <h3 data-i18n="investor_card_3_title">Caregivers</h3>
+              <p data-i18n="investor_card_3_text">Stay informed with a simple, portable object that is always nearby.</p>
+            </article>
+            <article class="thesis-card reveal">
+              <h3 data-i18n="investor_card_4_title">Clinics and partners</h3>
+              <p data-i18n="investor_card_4_text">A practical add-on concept focused on ease of use and everyday adherence.</p>
+            </article>
+          </div>
+
+          <div class="investor-panel reveal">
+            <div>
+              <div class="eyebrow" data-i18n="investor_panel_eyebrow">What makes DiaHub different</div>
+              <ul class="clean-list">
+                <li data-i18n="investor_panel_point_1">No phone-first interaction is required for quick checks.</li>
+                <li data-i18n="investor_panel_point_2">Designed as a compact keychain form factor for daily carry.</li>
+                <li data-i18n="investor_panel_point_3">Focused on clarity, simplicity, and calm decision-making.</li>
+              </ul>
+            </div>
+            <a class="button" href="mailto:hello@diahub.dk?subject=DiaHub%20Team%20Conversation" data-i18n="investor_panel_cta">Contact team</a>
+          </div>
+        </section>
+
+        <section class="section timeline-section">
+          <div class="section-intro reveal">
+            <div class="eyebrow" data-i18n="timeline_eyebrow">How it works</div>
+            <h2 data-i18n="timeline_title">Simple setup. Fast checks. Daily reliability.</h2>
+          </div>
+          <div class="timeline">
+            <article class="timeline-step reveal">
+              <strong data-i18n="timeline_step_1_title">Connect</strong>
+              <p data-i18n="timeline_step_1_text">DiaHub starts with Wi-Fi onboarding and connects to a compatible glucose data source.</p>
+            </article>
+            <article class="timeline-step reveal">
+              <strong data-i18n="timeline_step_2_title">Carry</strong>
+              <p data-i18n="timeline_step_2_text">Keep it on your keychain so glucose visibility is always close at hand.</p>
+            </article>
+            <article class="timeline-step reveal">
+              <strong data-i18n="timeline_step_3_title">Glance</strong>
+              <p data-i18n="timeline_step_3_text">Read glucose instantly in one glance, with room for trends and alerts.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section story-section" id="story">
+          <div class="story-grid">
+            <div class="story-media reveal">
+              <div class="portrait-frame">
+                <img src="assets/founder.png" alt="Founder of DiaHub" width="316" height="416" loading="lazy" decoding="async" />
+              </div>
+            </div>
+            <div class="story-copy reveal">
+              <div class="eyebrow" data-i18n="story_eyebrow">Founder story</div>
+              <h2 data-i18n="story_title">From surgery to the first prototype.</h2>
+              <p data-i18n="story_text_1">
+                In 2021, after pancreatic surgery, I was diagnosed with type 1 diabetes. Like many people at the beginning of this journey, I often missed critical glucose data, which can lead to serious consequences.
+              </p>
+              <p data-i18n="story_text_2">
+                Using my programming background and interest in electronics design, I built an ESP32 breadboard prototype. It still sits on my desk today, showing glucose in real time and reminding me about insulin and urgent snacks when glucose drops.
+              </p>
+              <p data-i18n="story_text_3">
+                That prototype became the foundation for DiaHub - a full product idea aimed at helping millions of people with diabetes. Wishing good health to everyone reading this! :)
+              </p>
+              <div class="prototype-frame">
+                <p class="prototype-label" data-i18n="story_proto_label">First ESP32 breadboard prototype</p>
+                <img src="assets/prototype.jpg" alt="First DiaHub prototype on ESP32 breadboard" width="1187" height="868" loading="lazy" decoding="async" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section faq-section" id="faq">
+          <div class="section-intro reveal">
+            <div class="eyebrow">FAQ</div>
+            <h2 data-i18n="faq_title">Quick answers about DiaHub.</h2>
+          </div>
+          <div class="faq-grid">
+            <details class="reveal">
+              <summary data-i18n="faq_q1">What is DiaHub?</summary>
+              <p data-i18n="faq_a1">A compact connected keychain display designed to show glucose information at a glance.</p>
+            </details>
+            <details class="reveal">
+              <summary data-i18n="faq_q2">Who is it for?</summary>
+              <p data-i18n="faq_a2">People living with diabetes, parents, caregivers, and anyone who benefits from easier visibility.</p>
+            </details>
+            <details class="reveal">
+              <summary data-i18n="faq_q3">Does it replace medical guidance or diagnosis?</summary>
+              <p data-i18n="faq_a3">No. DiaHub is a non-medical accessory for visibility and does not replace medical advice or diagnosis.</p>
+            </details>
+            <details class="reveal">
+              <summary data-i18n="faq_q4">How does DiaHub connect?</summary>
+              <p data-i18n="faq_a4">Through a simple Wi-Fi setup to compatible glucose data sources.</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+          <div class="contact-panel reveal">
+            <div>
+              <div class="eyebrow" data-i18n="contact_eyebrow">Next step</div>
+              <h2 data-i18n="contact_title">Join the DiaHub pilot and waitlist.</h2>
+              <p data-i18n="contact_text">
+                If you want updates, early-access details, or partnership dialogue, contact us and we will get back to you.
+              </p>
+            </div>
+            <div class="contact-actions">
+              <a class="button" href="mailto:hello@diahub.dk" data-i18n="contact_cta_primary">hello@diahub.dk</a>
+              <a class="button button-ghost" href="https://forms.gle/dhwkSYySyu7C3qeJ6" target="_blank" rel="noreferrer" data-i18n="contact_cta_secondary">User waitlist</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer-mini">
+        <p>© <span id="year"></span> DiaHub</p>
+        <button class="footer-link" id="open-cookie-settings" type="button" data-i18n="footer_cookie_settings">Cookie settings</button>
+      </footer>
+    </div>
+
+    <button class="scroll-top-button" id="scroll-top-button" type="button" aria-label="Back to top">
+      <span aria-hidden="true">↑</span>
+    </button>
+
+    <div class="cookie-consent" id="cookie-consent" role="dialog" aria-live="polite" aria-label="Cookie consent">
+      <div class="cookie-consent__header">
+        <span class="cookie-consent__icon" aria-hidden="true">🍪</span>
+        <h3 data-i18n="cookie_title">We value your privacy</h3>
+      </div>
+      <p data-i18n="cookie_text">
+        We use cookies to improve your experience on DiaHub and to analyze our traffic.
+      </p>
+      <div class="cookie-consent__actions">
+        <button id="cookie-decline" class="cookie-btn cookie-btn-ghost" type="button" data-i18n="cookie_decline">Decline</button>
+        <button id="cookie-settings-open" class="cookie-btn cookie-btn-ghost" type="button" data-i18n="cookie_settings">Settings</button>
+        <button id="cookie-accept" class="cookie-btn cookie-btn-primary" type="button" data-i18n="cookie_accept">Accept</button>
+      </div>
+    </div>
+
+    <dialog id="cookie-settings-modal" class="cookie-settings-modal">
+      <form method="dialog" class="cookie-settings-card">
+        <h3 data-i18n="cookie_settings_title">Cookie settings</h3>
+        <p data-i18n="cookie_settings_text">Choose which cookies you want to allow. Essential cookies are always on.</p>
+        <div class="cookie-option">
+          <label>
+            <input type="checkbox" id="cookie-essential" checked disabled />
+            <span data-i18n="cookie_essential">Essential cookies (required)</span>
+          </label>
+        </div>
+        <div class="cookie-option">
+          <label>
+            <input type="checkbox" id="cookie-analytics" />
+            <span data-i18n="cookie_analytics">Analytics cookies</span>
+          </label>
+        </div>
+        <div class="cookie-option">
+          <label>
+            <input type="checkbox" id="cookie-marketing" />
+            <span data-i18n="cookie_marketing">Marketing cookies</span>
+          </label>
+        </div>
+        <div class="cookie-settings-actions">
+          <button id="cookie-save" class="cookie-btn cookie-btn-primary" type="button" data-i18n="cookie_save">Save preferences</button>
+          <button class="cookie-btn cookie-btn-ghost" value="close" data-i18n="cookie_close">Close</button>
+        </div>
+      </form>
+    </dialog>
+
+<script src="https://raspberry235.pp.ua/api/widget/script" data-token="pub_27c96e6716d10017f093eef51efc0535"></script>
+    
+  </body>
+</html>
